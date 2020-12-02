@@ -1,0 +1,8 @@
+#goal definition
+int32 arm_request
+---
+#result definition
+int32 arm_result
+---
+#feedback
+int32 arm_feedback
