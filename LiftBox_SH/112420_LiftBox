@@ -1,0 +1,200 @@
+push in 2 added (Physically push a side of the box)
+
+4/3/2020
+parameter fixed after the experiment(experiment on 04/03/2020)
+
+4/6/2020
+S/W emergency Stop Error fixed
+
+4/7/2020
+minor parameter fixed
+
+4/10/2020
+Pushin2 One button Experiment done
+Gripper Error Fixed
+Cart walking test1
+
+4/17/2020
+COM Follow function added
+gripper half open option added
+Experiment: motion owner problem
+Problem not solved yet
+
+4/20/2020
+Gripper motion owner setting added
+
+4/21/2020
+shared memory saved
+
+4/22/2020
+saving data: daemon reference, gogoliftbox reference, HBWalking Reference
+
+4/23/2020
+COMx and COMy both are counted
+
+4/29/2020
+logging: HBwalking_COM, HBwalking_reference, gogolift_reference, daemon_reference
+ONLY COMy counter motion applied
+
+5/6/2020
+Save log file only when the save button is clicked
+
+5/7/2020
+gain override
+- 30 percent during COM follow
+- 100 percent back after COM follow done
+
+5/12/2020
+GUI tab "test"
+- add Joystick mode
+- save buttons from HBWalking for HBWalking test later
+
+5/13/2020
+Joystick walking step time: 2.5s --> 0.8s (manually switched)
+add gain override time
+
+
+5/14/2020
+gain override error fixed
+- 30 percent during COM follow
+- 0 percent back after COM follow done
+
+5/21/2020
+Move Box
+- pick up box from the table(assumed): buttons and motions are added
+- Moving COM to backward 5cm button added
+
+5/26/2020
+Move Box
+- New AL HBWalking_COM added.
+- HBWalking_COM: is same as the HBWalking AL, except c_pel in HB_inverse.h moves 0.05 along the x-axis.
+- -5cm walking button is wokring with HBWalking_COM AL
+
+5/28/2020
+Move Box
+- push COM 5cm backward after Hold a box to prevent the robot fall down to the front 
+
+After Experiment
+- a few parameters are fixed, still more parameters needs to be changed.
+- More parameters are fixed on simulation
+- need more experiment to fix this
+
+6/3/2020
+Move Box
+- a few buttons are added
+- COM move first and then lift the box sequence(COM change between motions occurs the motion errors!)
+- experiment required!!
+
+6/5/2020
+Move Box
+- COM move -3cm
+- Parameters are edited after experiment1,2
+
+6/8/2020
+Move Box
+- ABS COM move added
+- ABS COM modified after experiments
+
+
+6/9/2020
+Move Box
+- a few parameters are modified
+
+6/10/2020
+MOVE BOX
+- a few parameters are modified after yesterday's experiment
+- pre_turn motion added: moving hands backward before turn to avoid collision with the box)
+
+6/12/2020
+MOVE BOX
+- Joystick walking added
+- Part motions are combined in one button
+
+6/16/2020
+NEW GUI: WBTASK
+- 3 Whold body task sections are completed
+
+6/19/2020
+NEW GUI: WBTASK
+- GUI completed
+- a few parameters are fixed after experiments
+
+7/2/2020
+NEW GUI: WBTASK
+- GUI modified
+
+OLD GUI:
+- FT sensor reading panel added
+- COM move buttons are added
+
+
+7/8/2020
+***************************
+***LIFT BOX WORKING FILE***
+***************************
+- COM move buttons.
+- WBmotion->RefreshToCurrentReference function has been fixed.
+- NOT ALL the motions are going through "StartWBIKmotion()" yet.
+- LIFT BOX WORKING! IF YOU HAVE TO GO BACK WORKING FILE >> GO BACK TO THIS FILE
+
+7/10/2020
+getCOM, getZMP modified
+
+
+7/15/2020
+Still fixing getCOM error
+total COM will be displayed. Reset button for total COM value is added.
+
+
+7/16/2020
+getCOM error fixed with reset button.
+ZMP button seems not necessary.
+The debug comments still exist.
+
+7/16/2020 -2
+clean debug comments
+
+
+7/17/2020
+a few COM values are updated
+
+7/21/2020
+a few COM values are modified after 7/19 experiment
+
+7/22/2020
+Back_front COM value is changed after experiments(7/22).
+
+10/7/2020
+COM -5cm walking changes to -7cm walking
+
+10/8/2020
+Cart Error found!! will be fixed.
+
+10/12/2020
+CART error fixed: New Cart AL is added.
+Still cleaning the code.
+
+LIFT BOX WORKS!!
+MOVE BOX WORKS!!
+CART     WORKS!!
+
+10/15/2020
+FT sensor, ZMP log save file added
+
+10/16/2020
+Daemon Error fixed: daemon died when the joystick start button is clicked. DB problem. problem solved.
+
+10/16/2020 -2
+Minor cart error fixed
+
+10/20/2020
+CART - COM moves when releasing cart
+
+11/3/2020
+ZMP logging error Fixed
+
+11/4/2020
+ZMP logging added to HBWalking_COM, gogo_cart
+
+11/24/2020
+clean code. Code used for Demonstration.
